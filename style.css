@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("Assets/Background.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.popup-box {
+  width: 25em;
+  font-family: "Work Sans", sans-serif;
+}
+
+.popup-box .heading-container {
+  background: #2355f2 url("Assets/Pattern.png");
+  background-size: cover;
+  background-position: center;
+  padding: 3em;
+  text-align: center;
+  border-radius: 6px 6px 0 0;
+}
+
+.heading-container h1 {
+  font-weight: 600;
+  font-size: 1.6em;
+  color: #fff;
+}
+
+.popup-box .text-container {
+  background: #fff;
+  border-radius: 0 0 6px 6px;
+  padding: 1.8em;
+}
+
+.text-container .initial-p {
+  font-size: 0.945em;
+  text-align: center;
+  color: #7f7f7f;
+  margin-bottom: 1.7em;
+}
+
+.text-container .notice-p {
+  color: #cacaca;
+  font-size: 0.9em;
+  margin-bottom: 2em;
+}
+
+.input-container {
+  margin-bottom: 0.67em;
+}
+
+.input-container .sub-btn {
+  background: #2355f2;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.6em 0.9em;
+  border-radius: 4px;
+}
+
+.input-container input {
+  color: #c5c9d3;
+  font-family: "Work Sans", sans-serif;
+  border: none;
+  padding: 0.855em 1.3em;
+  border-radius: 4px;
+  font-weight: 500;
+  background: #f5f7fa;
+  width: 67%;
+}
+
+.input-container input:focus {
+  outline: none;
+  color: #7f7f7f;
+}
+
+.avatar-and-quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.avatar-container img {
+  margin-right: 0.5em;
+}
+
+.name-prof-container h4 {
+  font-size: 0.8em;
+}
+
+.name-prof-container p {
+  color: #7f7f7f;
+  font-size: 0.8em;
+}
+
+.quote-box {
+  text-align: center;
+  font-size: 0.9em;
+  color: #7f7f7f;
+}
+
+@media (max-width: 411px) {
+  .input-container input {
+    width: 62%;
+  }
+
+  .heading-container {
+    padding: 2.5em;
+  }
+}
